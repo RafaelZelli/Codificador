@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Codificador</title>
+</head>
+<body>
+    
+    <div id="selector">
+        <div id='tela'>
+            <select id="decoder">
+                <optgroup>
+                <option value disabled selected>Escolha uma Decodificação</option>
+                <option value="base64">Base 64</option>
+                <option value="caesar">Cifrão de Cesar</option>
+                </optgroup>
+            </select>
+
+            <div id="exibidorCesar">
+                
+
+                <div class="radios">
+                <label for='escolhaCesar'>Criptografar</label>
+                <input type="radio" id="escolhaCesar" value='cod' name="escolha" checked>
+                <label for='escolhaCesar2'>Descriptografar</label>
+                <input type="radio" id='escolhaCesar2' value='decod' name="escolha">
+                </div> 
+
+                <h3>Insira a Chave:</h3>
+                <input type="number" value="0" id="key">
+                
+                <h3>Escreva a mensagem para criptografar/descriptografar:</h3>
+                <textarea id="input"></textarea>
+                <h3>Resultado:</h3>
+                <textarea id="output" readonly></textarea>
+            </div>
+
+            <div id="exibidorBase64">
+                
+                <div class="radios">
+                <label for='escolhaBase64'>Criptografar</label>
+                <input type="radio" id="escolhaBase64" value='cod' name="escolha2" checked>
+                <label for='escolhaBase642'>Descriptografar</label>
+                <input type="radio" id="escolhaBase642" value='decod' name="escolha2">
+                </div>
+                
+                <h3>Escreva a mensagem para criptografar/descriptografar:</h3>
+                <textarea id="input2"></textarea>
+                <h3>Resultado:</h3>
+                <textarea id="output2" readonly></textarea>
+            </div>
+
+        </div>
+    </div>
+    
+<script src="codificador.js">
+</script>
+</body>
+</html>

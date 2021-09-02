@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', Courier, monospace;
+}
+
+#selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    background-image: url('matrix.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+select{
+    font-size: 2vw;
+    background-color: black;
+    color: green;
+    margin: 20px;
+}
+
+optgroup{
+    font-size: 2vw;
+}
+
+#exibidor{
+    display: flex;
+    flex-direction: column;
+}
+
+#exibidorCesar {
+    display: flex;
+}
+
+#exibidorBase64 {
+    display: none;
+}
+
+#exibidorCesar, #exibidorBase64{
+    flex-direction: column;
+    background-color: black;    
+    padding: 2vw;
+    border-radius: 10px;    
+}
+
+textarea {
+    background-color: #1C1C1C;
+    font-size: 1.5vw;
+    color: #A9A9A9;
+    border: none;
+    resize: none;
+    border-radius: 4px;
+}
+
+input{
+    background-color: #1C1C1C;
+    font-size: 1.5vw;
+    color: #A9A9A9;
+    border: none;
+    border-radius: 4px;
+}
+
+#tela{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color:  green;
+}
+
+.radios{
+    text-align: center;
+    background-color: #1C1C1C;
+    border-radius: 4px;
+}
+
+#escolhaBase64, #escolhaCesar{
+    margin-right: 20px;
+}
+
